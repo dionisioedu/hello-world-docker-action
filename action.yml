@@ -5,7 +5,7 @@ inputs:
   program-name:  # id of input
     description: 'The name of the useless program'
     required: true
-    default: 'useless'
+    default: 'nothing'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
