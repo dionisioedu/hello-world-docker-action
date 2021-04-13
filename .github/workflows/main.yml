@@ -1,16 +1,17 @@
 on: [push]
 
 jobs:
-  build:
+  hello_world_job:
     runs-on: ubuntu-latest
-    name: Build linux application
+    name: A job to say hello
     steps:
-    - name: Build
+    - name: Hello world action step
       id: hello
-      uses: actions/hello-world-docker-action@v1.2
+      uses: actions/hello-world-docker-action@v1
       with:
-        program-name: 'my_useless'
+        who-to-greet: 'Eduardo Fernandes'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
+
 

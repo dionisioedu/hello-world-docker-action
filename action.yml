@@ -8,7 +8,7 @@ inputs:
     default: 'nothing'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'The of the build'
 runs:
   using: 'docker'
   image: 'Dockerfile'
