@@ -1,10 +1,10 @@
 FROM alpine:3.10
 
-RUN apt-get update && \
-    apt-get -y install \
+RUN sudo apt-get update && \
+    sudo apt-get -y install \
     build-essential \
     zlib1g-dev \
-    && apt-get clean --yes
+    && sudo apt-get clean --yes
 
 COPY entrypoint.sh /entrypoint.sh
 
