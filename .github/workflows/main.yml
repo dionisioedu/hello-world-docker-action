@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: actions/hello-world-docker-action@master
+      uses: actions/hello-world-docker-action@v1.5
       with:
         program-name: 'myapp'
     # Use the output from the `hello` step
