@@ -5,5 +5,5 @@
 # echo "::set-output name=time::$time"
 
 echo "Build executable..."
-gcc -o $1 src/main.c
-./$1
+gcc -o myapp src/main.c
+./myapp
