@@ -18,6 +18,6 @@ jobs:
     name: Build And Test
     steps:
     - name: Build
-      uses: dionisioedu/action-build-tests@main
+      uses: dionisioedu/hello-world-docker-action/action-build-tests@main
       with:
         program-name: 'myProgram'
