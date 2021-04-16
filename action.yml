@@ -2,15 +2,13 @@
 name: 'Build Action'
 description: 'Build a useless program and give it a name'
 inputs:
-  program-name:  # id of input
-    description: 'The name of the useless program'
+  who-to-greet:  # id of input
+    description: Greetings
     required: true
-    default: 'nothing'
+    default: 'no name'
 outputs:
   time: # id of output
     description: 'The of the build'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.program-name }}
+  image: 'dockerfile'
