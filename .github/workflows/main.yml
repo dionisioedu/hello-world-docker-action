@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: This job is just a hello world
     steps:
+    - uses: actions/checkout@v2
+
     - name: Hello world action step
       id: hello
       uses: dionisioedu/hello-world-docker-action@main
@@ -17,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build And Test
     steps:
+    - uses: actions/checkout@v2
+    
     - name: Build
       uses: dionisioedu/hello-world-docker-action/action-build-tests@main
       with:
