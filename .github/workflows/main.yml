@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: actions/action-build-tests@master
+      uses: actions/build-tests@main
       with:
         program-name: 'myAppFromAction'
     # Use the output from the `hello` step
