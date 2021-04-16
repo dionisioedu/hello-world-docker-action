@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: actions/build-tests@main
+      uses: dionisioedu/hello-world-docker-action@main
       with:
         program-name: 'myAppFromAction'
     # Use the output from the `hello` step
