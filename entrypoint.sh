@@ -6,6 +6,6 @@ echo "::set-output name=time::$time"
 
 gcc --version
 
-gcc -o src/$1 src/main.c
 cd src
+gcc -o $1 src/main.c
 ./$1
