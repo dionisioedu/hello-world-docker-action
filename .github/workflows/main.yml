@@ -9,20 +9,20 @@ jobs:
 
     - name: Hello world action step
       id: hello
-      uses: dionisioedu/hello-world-docker-action@main
+      uses: dionisioedu/hello-world-docker-action@v1.8
       with:
-        who-to-greet: 'Eduardo Fernandes'
+        program-name: 'Program Name'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }} .."
 
-  build-and-test:
-    runs-on: ubuntu-latest
-    name: Build And Test
-    steps:
-    - uses: actions/checkout@v2
+  # build-and-test:
+  #   runs-on: ubuntu-latest
+  #   name: Build And Test
+  #   steps:
+  #   - uses: actions/checkout@v2
 
-    - name: Build
-      uses: hello-world-docker-action/action-build-tests@main
-      with:
-        program-name: 'myProgram'
+  #   - name: Build
+  #     uses: hello-world-docker-action/action-build-tests@main
+  #     with:
+  #       program-name: 'myProgram'
