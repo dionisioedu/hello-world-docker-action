@@ -9,7 +9,7 @@ jobs:
 
     - name: Hello world action step
       id: hello
-      uses: dionisioedu/hello-world-docker-action@main
+      uses: dionisioedu/action-build-tests@main
       with:
         program-name: 'Program Name'
 
