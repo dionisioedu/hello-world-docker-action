@@ -1,15 +1,16 @@
-name: 'Build And Test Action'
-description: 'Build a useless program and give it a name'
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
   program-name:  # id of input
-    description: 'The name of the useless program'
+    description: 'Program Name'
     required: true
-    default: 'nothing'
+    default: 'appName'
 outputs:
   time: # id of output
-    description: 'The of the build'
+    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'dockerfile'
   args:
-    - ${{ inputs.program-name }}
+    - ${{ inputs.who-to-greet }}

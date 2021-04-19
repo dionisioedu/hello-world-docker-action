@@ -1,9 +1,5 @@
-#!/bin/bash
+#!/bin/sh -l
 
-echo "String received: $1"
+echo "Hello $1"
 time=$(date)
 echo "::set-output name=time::$time"
-
-# echo "Build executable..."
-# gcc -o myapp src/main.c
-# ./myapp
