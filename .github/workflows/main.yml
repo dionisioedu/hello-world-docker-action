@@ -9,7 +9,7 @@ jobs:
 
     - name: Hello world action step
       id: hello
-      uses: dionisioedu/action-build-tests@main
+      uses: dionisioedu/build-tests@main
       with:
         program-name: 'Program Name'
 
