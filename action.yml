@@ -10,6 +10,6 @@ outputs:
     description: 'The of the build'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'dockerfile'
   args:
     - ${{ inputs.program-name }}
