@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: 'dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.program-name }}
