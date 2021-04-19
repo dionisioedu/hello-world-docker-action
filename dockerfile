@@ -6,11 +6,11 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
-RUN sudo apt-get update && \
-    sudo apt-get -y install \
+RUN apt-get update && \
+    apt-get -y install \
     build-essential \
     zlib1g-dev \
-    && sudo apt-get clean --yes
+    && apt-get clean --yes
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
