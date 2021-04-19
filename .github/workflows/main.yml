@@ -9,7 +9,7 @@ jobs:
 
     - name: Hello world action step
       id: hello
-      uses: dionisioedu/hello-world-docker-action@v1.8
+      uses: dionisioedu/hello-world-docker-action@v1.9
       with:
         program-name: 'Program Name'
     # Use the output from the `hello` step
