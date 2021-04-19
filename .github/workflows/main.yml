@@ -9,9 +9,9 @@ jobs:
 
     - name: Hello world action step
       id: hello
-      uses: dionisioedu/hello-world-docker-action@main
+      uses: dionisioedu/hello-world-docker-action@v1
       with:
-        program-name: 'Program Name'
+        program-name: 'appDocker'
 
     # Use the output from the `hello` step
     - name: Get the output time
